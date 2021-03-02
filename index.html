@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neight</title>
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="icon" href="logo_green_.png">
+  </head>
+  <body>
+    <!-- トップナビ -->
+    <nav class="fixed_navber">
+      <div class="logo_container">
+        <a href="#top">
+          <img class="logo_img" src="icon/logo_green.png">
+        </a>
+        <a href="plan.html" class="plice"><p>料金プラン</p></a>
+        <img class="menu_img" id="menu" src="icon/menu_icon.jpeg">
+        <div class="overlay" id="overlay">
+            <ul class="list_nav">
+              <li class="list_nav_item"><a href="#top">Home</a></li>
+              <li class="list_nav_item"><a href="#service">Service</a></li>
+              <li class="list_nav_item"><a href="#skill">Skill</a></li>
+              <li class="list_nav_item"><a href="#work">Work</a></li>
+              <li class="list_nav_item"><a href="#about">About</a></li>
+              <li class="list_nav_item"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ヘッダー -->
+    <header class="header" id="top">
+        <div class="top_logo_txt">
+          <p class="nameis">Eito Nakamoto</p>
+          <p class="job">Web Creater</p>
+          <a class="top_form" href="#contact">
+            お問い合わせはこちら
+          </a>
+        </div>
+    </header>
+    <!-- メイン -->
+    <main class="main">
+      <!-- サービス -->
+      <section class="service" id="service">
+        <h2 class="ttl">My Service.</h2>
+        <div class="sv_container">
+          <ul class="list_sv_item">
+            <li>
+              <h3 class="sv_ttl">ディレクション</h3>
+              <p class="sv_subttl">DIRECTION</p>
+              <img src="service_icon/sv_icon01.jpeg">
+              <p class="sv_txt">お客様の要望をヒアリングし、現状の問題点を洗い出し、効果的なプランを作成いたします。制作ではデザインに入る前の事前の準備が特に重要になります。何が必要で何が必要でないのかを判断し、費用対効果の高いWebサイトを作るための土台を作ります。</p>
+            </li>
+
+            <li>
+              <h3 class="sv_ttl">デザイン</h3>
+              <p class="sv_subttl">DESIGN</p>
+              <img src="service_icon/sv_icon02.jpeg">
+              <p class="sv_txt">ヒアリングに基づいたプランに沿って、デザインを作成いたします。人の使うものであることを常に意識して、使う人が迷わない、目的を達成できるデザインを心がけています。インターフェースの重要性が増す中でデザインの役割を理解し、そのプランに最適な提案をさせていただきます。</p>
+            </li>
+
+            <li>
+              <h3 class="sv_ttl">コーディング</h3>
+              <p class="sv_subttl">CODING</p>
+              <img src="service_icon/sv_icon03.jpeg">
+              <p class="sv_txt">デザインの意図を理解し、動きや効果を適切に使用することでWebサイトの仕上がりは大きく変わります。スマートフォンサイト、ワードプレスを使用した更新性の高いサイト、Javascriptを使用した動きのあるサイトなど、様々なサイトのコーディングを行っております。</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- スキル -->
+      <section class="skill" id="skill">
+        <h2 class="ttl">My Skills.</h2>
+        <div class="sk_container">
+          <div class="sk_item">
+            <img src="skill_icon/html_アイコン.png">
+            <p class="sk_info">HTML5</p>
+          </div>
+
+          <div class="sk_item">
+            <img src="skill_icon/css_アイコン.png">
+            <p class="sk_info">CSS3</p>
+          </div>
+
+          <div class="sk_item">
+            <img src="skill_icon/javascript_アイコンpng.png">
+            <p class="sk_info">JavaScript</p>
+          </div>
+
+          <div class="sk_item">
+            <img src="skill_icon/bootstrap_アイコン.png">
+            <p class="sk_info">BootStrap</p>
+          </div>
+
+          <div class="sk_item">
+            <img src="skill_icon/c_アイコン.png">
+            <p class="sk_info">C言語</p>
+          </div>
+
+          <div class="sk_item">
+            <img src="skill_icon/java_アイコン.png">
+            <p class="sk_info">Java</p>
+          </div>
+
+          <div class="sk_item">
+            <img src="skill_icon/mysql_アイコン.png">
+            <p class="sk_info">MySQL</p>
+          </div>
+
+          <div class="sk_item">
+            <img src="skill_icon/wordpress_アイコン.png">
+            <p class="sk_info">WordPress</p>
+          </div>
+
+          <div class="sk_item">
+            <img src="skill_icon/github_アイコン.png">
+            <p class="sk_info">GitHub</p>
+          </div>
+        </div>
+      </section>
+      <!-- ワーク -->
+      <section class="work" id="work">
+        <h2 class="ttl">My Works.</h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p>模写コーディング</p>
+              <div class="slide_fbox">
+                <div class="slide_left">
+                  <a href=""><img src="img/top_img01.jpg" alt=""></a>
+                </div>
+                <div class="slide_right">
+                  <ul>
+                    <li class="wk_ttl">Webサイト作成</li>
+                    <li class="wk_txt">デザインカンプからレスポンシブサイトをコーディングしました。</li>
+                    <li class="wk_skill">Planning/Design/HTML・CSS/</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <p>模写コーディング</p>
+              <div class="slide_fbox">
+                <div class="slide_left">
+                  <a href=""><img src="img/top_img02.jpg" alt=""></a>
+                </div>
+                <div class="slide_right">
+                  <ul>
+                    <li class="wk_ttl">Webサイト作成</li>
+                    <li class="wk_txt">デザインカンプからレスポンシブサイトをコーディングしました。</li>
+                    <li class="wk_skill">Planning/Design/HTML・CSS/</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <p>模写コーディング</p>
+              <div class="slide_fbox">
+                <div class="slide_left">
+                  <a href=""><img src="img/top_img03.jpg" alt=""></a>
+                </div>
+                <div class="slide_right">
+                  <ul>
+                    <li class="wk_ttl">Webサイト作成</li>
+                    <li class="wk_txt">デザインカンプからレスポンシブサイトをコーディングしました。</li>
+                    <li class="wk_skill">Planning/Design/HTML・CSS/</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <!-- アバウト -->
+      <section class="about" id="about">
+        <h2 class="ttl">About Me.</h2>
+        <h3>仲本 栄人/WEBクリエイター</h3>
+        <p class="ab_description">飲食業、建築業、自動車製造業を経て<br>
+          ウェブ制作をしております。</p>
+        <div class="ab_fbox">
+          <div class="ab_left">
+            <img src="img/my-face_img.JPG" alt="">
+          </div>
+          <div class="ab_right">
+            <ul>
+              <p class="ab_ttl">-経歴-</p>
+              <li>2020年 2月  プログラミング学習開始(独学) </li>
+              <li>2020年 6月  ライフスキルアカデミー(一般法人ライフスキルサポート協会が運営する職業訓練校)  入校</li>
+              <li>2020年 8月  ライフスキルアカデミー  卒業</li>
+              <li>2020年 9月  web制作学習開始(独学)</li>
+              <li>2021年 2月  フリーランスでのHP制作、LPなどの制作を中心に活動中</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p class="ab_ttl">-活動拠点-</p>
+          <p class="ab_txt" >愛知県(出身：沖縄県)</p>
+          <p class="ab_ttl">-想い-</p>
+          <p class="ab_txt">私はお客様の想いを汲み取って、「あなただけのWebサイト」を真心込めて作成しております。<br>
+            安価でデザイン性の優れたWebサイトを作成いたします。<br>
+            納品したら終わりではなく、納品後もお客様に寄り添ってサイト制作のお手伝いをさせていただきます。
+          </p>
+        </div>
+      </section>
+
+      <!-- コンタクト -->
+      <section class="contact" id="contact">
+        <h2 class="ttl">Contact Me.</h2>
+        <p class="ct_txt">
+          お見積りや案件の相談など<br>
+          お気軽にご相談ください。
+      </p>
+        <form method="POST" action="">
+          <div class="ct_fbox">
+            <div class="ct_left">
+              <div class="naming"><input class="inputArea" type="text" placeholder="お名前（必須）"></div>
+            </div>
+            <div class="ct_right">
+              <div class="telNum"><input class="inputArea" type="text" placeholder="お電話番号（任意）"></div>
+            </div>
+          </div>
+          <div class="mailAdd">
+              <input class="inputArea" type="text" placeholder="メールアドレス（必須）">
+          </div>
+          <div class="inquiry">
+              <textarea class="inputArea" id="" cols="30" rows="10" placeholder="お問い合わせ内容（必須）"></textarea>
+          </div>
+          <!-- send 送信ボタン -->
+          <button class="send">送信</button>
+      </form>
+      </section>
+
+    </main>
+
+
+
+
+
+    <!-- フッター -->
+    <footer>
+      <p>©Copyright | Neight 2020 All Rights Reserved</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="jquery.min.js"></script>
+    <script>
+      $('#overlay').hide();
+      $('#menu').on('click', function() {
+        $('#overlay').slideToggle();
+      })
+      //１．クリックイベントの設定
+      $(document).on('click', function(e) {
+      // ２．クリックされた場所の判定
+      if(!$(e.target).closest('#pop_up').length && !$(e.target).closest('#button').length){
+      $('#pop_up').fadeOut();
+      }else if($(e.target).closest('#button').length){
+      // ３．ポップアップの表示状態の判定
+      if($('#pop_up').is(':hidden')){
+        $('#pop_up').fadeIn();
+      }else{
+        $('#pop_up').fadeOut();
+      }
+      }
+      });
+    </script>
+  </body>
+</html>

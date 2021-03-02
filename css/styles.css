@@ -1,0 +1,455 @@
+
+/* (iphone) common */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+/* トップナビ */
+.fixed_navber {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  background-color: #fff;
+  padding: 5px 0;
+}
+.logo_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.logo_img {
+  width: 50px;
+  line-height: 70px;
+  padding: 5px 0;
+  margin-left: 15px;
+}
+.plice {
+  display: block;
+  text-decoration: none;
+  /* height: 50px; */
+}
+.plice p {
+  border: 2.5px solid #bbb;
+  background-color: #4d4d4d2c;
+  color: #000;
+  padding: 5px;
+  margin: 12px 0;
+}
+
+.menu_img {
+  width: 30px;
+  height: 30px;
+  line-height: 70px;
+  margin-top: 15px;
+  margin-right: 15px;
+  float: right;
+}
+.menu_img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.menu_img:active {
+  position: relative;
+  top: 1px;
+}
+/* 隠れメニュー */
+.overlay {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  flex-basis: 100%;
+  text-align: left;
+  padding-left: 15px;
+}
+.list_nav {
+  list-style: none;
+  padding: 0;
+}
+.list_nav_item a {
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  font-size: 15px;
+  line-height: 1.5em;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+.list_nav_item.scroll {
+  transition: 025s ease-in-out;
+}
+.list_nav_item :hover {
+  color: tomato;
+}
+/* ヘッダー */
+.header {
+  padding: 80px 0;
+  margin-top: 10px;
+  width: 100%;
+  background-image: url(../img/top_img06.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+}
+.top_logo_txt {
+  height: 100%;
+  text-align: center;  
+  color: #fff;
+}
+.nameis {
+  margin: 0px;
+  padding: 30px 0 0 0;
+  font-size: 50px;
+  font-family: cursive;
+  text-shadow: 3px 2px 15px #000;
+}
+.job {
+  font-size: 40px;
+  font-family: 'Avenir Next Condensed',sans-serif;
+  text-shadow: 2px 1px 2px #000;
+  margin: 0;
+  padding: 30px 0 130px 0;
+}
+.top_form {
+  padding:  20px 30px;
+  font-size: 25px;
+  color: #fff;
+  text-shadow: 2px 1px 2px #000;
+  background-color: #c1c0c0aa;
+  border: 1px solid #bbb;
+  text-decoration: none;
+  border-radius: 30px;
+  font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN';
+  cursor: pointer;
+}
+.top_form:hover {
+  opacity: 0.8;
+}
+/* メイン */
+.main {
+  width: 100%;
+  background-color: #cccccc33;
+  padding: 0 5%;
+}
+/* サービス */
+.service {
+  padding: 5%;
+}
+section {
+  padding-top: 10%;
+}
+.sv_container * {
+  letter-spacing: 0.1em;
+}
+.ttl {
+  text-align: center;
+  margin: 10% auto;
+  font-size: 40px;
+  font-weight: 100;
+  font-family: 'Iowan Old Style',sans-serif;
+  line-height: 1.0;
+}
+.list_sv_item {
+  padding: 0;
+}
+.list_sv_item li {  
+  list-style: none;
+}
+.list_sv_item * {
+  text-align: center;
+}
+.sv_ttl {
+  font-size: 20px;
+  font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+  margin: 0 auto;
+}
+.sv_subttl {
+  font-size: 13px;
+  margin: 0 auto 5% auto;
+  color: #888;
+}
+.list_sv_item img {
+  width: 60px;
+}
+.sv_txt {
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  line-height: 2;
+  margin: 0 5% 15% 5%;
+  color: #aaa;
+  font-family: 'Osaka',sans-serif;
+}
+/* スキル */
+.sk_container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sk_item img {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+.sk_item {
+  width: 30%;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.sk_info {
+  font-size: 15px;
+  text-align: center;
+  color: #aaa;
+  font-family: 'Iowan Old Style', sans-serif;
+}
+/* ワーク */
+.work {
+  padding: 5% 0;
+}
+.swiper-container {
+  z-index: 1;
+  width: 100%;
+  height: 80%;
+  background-color: rgba(150, 150, 150, 0.5);
+  border: 10px solid dimgray;
+  border-radius: 5%;
+}
+.swiper-slide p {
+  text-align: center;
+  color: #001270;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bold;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.slide_right ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+.slide_right li {
+  margin: 0 10% 5% 10%;
+  text-align: center;
+}
+.wk_ttl {
+  font-weight: bold;
+  font-family: "Gill Sans", sans-serif;
+  color: #331744;
+}
+.wk_txt {
+  font-weight: normal;
+  font-family: 'ヒラギノ角ゴ ProN W3',sans-serif;
+  color: dimgray;
+}
+.wk_skill {
+  color: #000;
+  font-family: 'ヒラギノ角ゴ ProN W3',sans-serif;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  width: 25px;
+  height: 0px;
+}
+.swiper-pagination {
+  bottom: 0 !important;
+}
+
+/* アバウト */
+.about {
+  margin-bottom: 0;
+}
+.ab_left img {
+  display: inline-block;
+  width: 60%;
+  margin: 5% 20%;
+  border: 5px solid #000;
+  border-radius: 5%;
+}
+.about h3 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  margin: 0;
+}
+.ab_description {
+  text-align: center;
+  margin: 5%;
+  font-size: 1em;
+  font-weight: normal;
+  font-family: 'Meiryo UI','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+  color: dimgray;
+}
+.ab_ttl {
+  font-size: 20px;
+  text-align: center;
+  font-weight: normal;
+  font-family: 'Meiryo UI','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+.ab_txt {
+  margin: 0 10%;
+  line-height: 1.7em;
+  font-size: 0.9em;
+  text-align: center;
+  font-weight: normal;
+  font-family: 'Meiryo UI','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+  color: dimgray;
+}
+.ab_right {
+  margin: auto;
+}
+.ab_right ul {
+  padding: 0;
+  margin: auto;
+}
+.ab_right li {
+  margin: 0 5% 5px 5%;
+  font-size: 0.8em;
+  font-weight: normal;
+  font-family: 'Meiryo UI','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+  color: dimgray;
+}
+.ab_container dt {
+  width: 40%;
+  float: left;
+  margin: 0 0 10px 0;
+  font-size: 10px;
+}
+.ab_container dd {
+  width: 60%;
+  float: right;
+  margin: 0 0 10px 0;
+  font-size: 10px;
+}
+/* コンタクト */
+.contact {
+margin-bottom: 0;
+}
+.ct_txt {
+  text-align: center;
+  margin: 0 0 5% 0;
+}
+form {
+  padding-bottom: 10%;
+}
+form .inputArea {
+  width: 100%;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  margin: 0 auto 20px;
+  padding: 15px;
+  font-size: 15px;
+}
+.send {
+  display: block;
+  width: 40%;
+  height: 50px;
+  margin:  auto;
+  background-color: pink;
+  border-radius: 1%;
+}
+/* フッター */
+footer {
+  height: 100px;
+  background-color: dimgray;
+  padding: 20px;
+}
+footer p {
+  text-align: center;
+  font-size: small;
+}
+/* (ipad)  middle screen */
+@media (min-width:650px){
+  /* ナビ */
+  .menu_img {
+    display: none;
+  }
+  .overlay {
+  display: inline-block !important;
+  flex-basis: 65%;
+  padding-left: 0;
+  margin-right:25px;
+  }
+  .list_nav {
+    justify-content: space-between;
+    display: flex;
+  }
+  /* メイン */
+  .ttl {
+    margin: 5% 0;
+  }
+  /* サービス */
+  .list_sv_item {
+    display: flex;
+  }
+  .list_sv_item li {
+    margin-right: 20px;
+  }
+  .sv_txt {
+    letter-spacing: 0.3em;
+    line-height: 1.5rem;
+  }
+  /* スキル */
+  .sk_item {
+    width: 20%;
+  }
+  /* ワーク */
+  .swiper-container p {
+    font-size: 20px;
+  }
+  .slide_fbox {
+    display: flex;
+    width: 100%;
+  }
+  .slide_left {
+    width: 60%;
+    padding: 0 0 5% 5%;
+  }
+  .slide_right {
+    width: 40%;
+    padding: 0 5% 5% 0;
+  }
+  .slide_right li {
+    text-align: center;
+    margin-bottom: 30%;
+  }
+  .wk_ttl {
+    font-size: 25px;
+  }
+  /* アバウト */
+  .ab_fbox {
+    display: flex;
+  }
+  .ab_left img {
+    margin: 20%;
+  }
+  /* コンタクト */
+  .ct_fbox {
+    display: flex;
+  }
+  .ct_left,
+  .ct_right {
+    width: 50%;
+  }
+  /* footer */
+}
+
+/* (pc) large screen */
+/* @media (min-width:1050px){
+} */
+
+
